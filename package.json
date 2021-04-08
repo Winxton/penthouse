@@ -1,5 +1,5 @@
 {
-  "name": "penthouse",
+  "name": "@rvere/penthouse-lambda",
   "description": "Generate critical path CSS for web pages",
   "version": "2.3.2",
   "homepage": "https://github.com/pocketjoso/penthouse",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/pocketjoso/penthouse.git#master"
+    "url": "git+https://github.com/winxton/penthouse.git"
   },
   "bugs": {
     "url": "https://github.com/pocketjoso/penthouse/issues"
@@ -40,7 +40,7 @@
     "css-tree": "1.0.0-alpha.28",
     "debug": "^4.1.1",
     "jsesc": "^2.5.2",
-    "puppeteer": "2.1.1"
+    "chrome-aws-lambda": "5.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.0",

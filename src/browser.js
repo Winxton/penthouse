@@ -1,4 +1,5 @@
-import puppeteer from 'puppeteer'
+const chromium = require('chrome-aws-lambda');
+
 import debug from 'debug'
 
 const debuglog = debug('penthouse:browser')
@@ -41,7 +42,7 @@ export async function launchBrowserIfNeeded ({ getBrowser, width, height }) {
 
     debuglog('no browser instance, launching new browser..')
 
-    _browserLaunchPromise = puppeteer.launch({
+    _browserLaunchPromise = chromium.puppeteer.launch({
       args: DEFAULT_PUPPETEER_LAUNCH_ARGS,
       ignoreHTTPSErrors: true,
       defaultViewport: {
