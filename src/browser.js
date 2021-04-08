@@ -1,5 +1,4 @@
-const chromium = require('chrome-aws-lambda');
-
+import chromium from 'chrome-aws-lambda'
 import debug from 'debug'
 
 const debuglog = debug('penthouse:browser')
