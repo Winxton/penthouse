@@ -43,6 +43,7 @@ export async function launchBrowserIfNeeded ({ getBrowser, width, height }) {
 
     _browserLaunchPromise = chromium.puppeteer.launch({
       args: DEFAULT_PUPPETEER_LAUNCH_ARGS,
+      executablePath: await chromium.executablePath,
       ignoreHTTPSErrors: true,
       defaultViewport: {
         width,
